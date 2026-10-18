@@ -1,21 +1,23 @@
-# Smart Plant Monitor — Proposta Inicial (Milestone 1)
+# PlantCare — Proposta Inicial (Milestone 1)
 
 ## 1. Identificação
-<!-- Capa -->
-* **Universidade:** IADE | Universidade Europeia
+
+* **Universidade:** Universidade Europeia
+* **Faculdade:** IADE - Faculdade de Design, Tecnologia e Comunicação
 * **Curso:** Engenharia Informática - EaD 2026/2027
 * **Unidades Curriculares:** 
   * Sistemas Distribuídos
   * Computação Física e IoT
-  * Inteligência Artificial
   * Engenharia de Software
-* **Nome do Projeto:** SmartPlant Monitor
-* **Grupo:** 
+  * Inteligência Artificial
+
+* **Nome do Projeto:** PlantCare - Monitor de bem estar para plantas
+* **Grupo:** XX
 * **Elementos do Grupo:**
-Daniel Cruz (20240455) 
-Rui Encarnação (20240458) 
-Dylane Esteves(20240914)  
-Rute Frutuoso (20241693)
+  * Daniel Cruz (20240455) 
+  * Rui Encarnação (20240458) 
+  * Dylane Esteves(20240914)  
+  * Rute Frutuoso (20241693)
 
 * **Link para o Repositório GitHub:** [https://github.com/usuario/repositorio](https://github.com/usuario/repositorio)
 * **Palavras-chave:** IoT, ESP32, Casas Inteligentes, Previsão Energética, Inteligência Artificial, Sistemas Distribuídos, Plantas.
@@ -29,7 +31,7 @@ Ter um pequeno jardim em casa pode ajudar a equilibrar o bem-estar que, cada vez
 Pretendemos, com este projeto, ajudar todos os PlantLovers a estarem mais atentos às necessidades das suas plantas, mesmo que o seu dia-a-dia seja num ritmo mais acelerado do que aquilo que eles gostariam.
 
 ### 2.2. Motivação e Objetivos
-* **Motivação:** Tendo vários PlantLovers na constituição do grupo, foi fácil chegar à ideia deste projeto, pois tem sido um dos desafios ao longo do curso: manter todas as plantas vivas.
+* **Motivação:** Tendo vários PlantLovers na constituição do grupo, foi fácil chegar à ideia deste projeto, pois tem sido um dos desafios ao longo do curso: manter todas as plantas de casa vivas.
 * **Objetivos:** 
   * [Objetivo 1: Criar protótipo IoT baseado em ESP32 para recolha de dados.]
   * [Objetivo 2: Desenvolver modelo preditivo de IA para estimar o consumo de energia.]
