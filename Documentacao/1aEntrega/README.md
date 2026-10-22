@@ -12,15 +12,15 @@
   * Inteligência Artificial
 
 * **Nome do Projeto:** PlantCare - Monitor de bem estar para plantas
-* **Grupo:** XX
+* **Grupo:** 
 * **Elementos do Grupo:**
   * Daniel Cruz (20240455) 
   * Rui Encarnação (20240458) 
   * Dylane Esteves(20240914)  
   * Rute Frutuoso (20241693)
 
-* **Link para o Repositório GitHub:** [https://github.com/usuario/repositorio](https://github.com/usuario/repositorio)
-* **Palavras-chave:** IoT, ESP32, Casas Inteligentes, Previsão Energética, Inteligência Artificial, Sistemas Distribuídos, Plantas.
+* **Link para o Repositório GitHub:** https://github.com/pbl-smart-plant/smart-plant-monitor
+* **Palavras-chave:** IoT, ESP32, Inteligência Artificial, Sistemas Distribuídos, Casas Inteligentes, Plantas.
 
 ---
 
