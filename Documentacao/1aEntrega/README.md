@@ -12,7 +12,7 @@
   * Inteligência Artificial
 
 * **Nome do Projeto:** PlantCare - Monitor de bem estar para plantas
-* **Grupo:** 
+* **Grupo:** 05
 * **Elementos do Grupo:**
   * Daniel Cruz (20240455) 
   * Rui Encarnação (20240458) 
