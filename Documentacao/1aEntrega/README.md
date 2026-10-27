@@ -79,11 +79,13 @@ Seguindo a sugestão do docente de Sistemas Distribuídos, o projeto será desen
 | Sensor de luminosidade (BH1750) | 1 | Medição da luz | 1 |
 | Breadboard e cabos jumper | 1 conjunto | Montagem do circuito | 1 |
 | Powerbank / fonte 5V | 1 | Alimentação do sistema | 1 |
+| Painel solar pequeno | 1 | Alimentação auxiliar | 1 |
+| Sensor de pH do solo | 1 | Medição do pH do solo | 1 |
 | Mini bomba de água submersível 5V + tubo | 1 | Rega automática | 2 |
 | Módulo relé 5V | 1 | Ligar e desligar a bomba | 2 |
 | Sensor de nível de água (boia) | 1 | Alerta de reservatório vazio | 2 |
-| Painel solar pequeno | 1 | Alimentação auxiliar no exterior (opcional) | 2 |
-| Sensor de pH do solo | 1 | Medição do pH do solo (opcional, a avaliar) | 2 |
+| Sensor de Proximidade | 1 | Para ativação da tela | 2 |
+
 
 ### 3.3. Guiões de Teste Preliminares
 * **Guião de Teste 1: Registo e Envio de Dados do Sensor**
