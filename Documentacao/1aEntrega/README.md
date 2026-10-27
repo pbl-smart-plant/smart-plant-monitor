@@ -98,5 +98,15 @@ Amantes de plantas, com vidas activas e agitadas.
 ---
 
 ## 5. Planeamento e Calendarização
+### 5.1. Distribuição de Tarefas
 
-### 5.1. Distribuição de Tarefas> ⚠️ A distribuição de tarefas ainda está em definição e será atualizada nas próximas entregas.| Área | Responsável | Apoio ||---|:---:|:---:|| Sistemas Distribuídos & Infraestrutura | A definir | A definir || Computação Física & Hardware IoT | A definir | A definir || Desenvolvimento do Modelo de IA | A definir | A definir || Engenharia de Software & Testes | A definir | A definir |Todos os elementos do grupo (Daniel, Rute, Rui e Dylane) montam uma réplica do sistema em casa e participam nas apresentações.
+> ⚠️ A distribuição de tarefas ainda está em definição e será atualizada nas próximas entregas.
+
+| Área | Responsável | Apoio |
+|---|:---:|:---:|
+| Sistemas Distribuídos & Infraestrutura | A definir | A definir |
+| Computação Física & Hardware IoT | A definir | A definir |
+| Desenvolvimento do Modelo de IA | A definir | A definir |
+| Engenharia de Software & Testes | A definir | A definir |
+
+Todos os elementos do grupo (Daniel, Rute, Rui e Dylane) montam uma réplica do sistema em casa e participam nas apresentações.
