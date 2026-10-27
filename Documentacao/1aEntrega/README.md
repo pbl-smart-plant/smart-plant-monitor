@@ -107,11 +107,22 @@ Seguindo a sugestão do docente de Sistemas Distribuídos, o projeto será desen
 
 <img width="1774" height="887" alt="Image" src="https://github.com/user-attachments/assets/52158ab7-a3db-4576-99f7-55872ca09548" />
 
+*Diagrama de blocos conceptual (imagem gerada por IA). Notas sobre a arquitetura real:*
+
+- *ESP32: o sistema terá **4 dispositivos**, um em casa de cada elemento do grupo, todos a enviar dados para o mesmo servidor online. Assim, o modelo de IA é treinado com dados reais recolhidos em 4 ambientes diferentes.*
+- *Fonte de dados externa: o modelo de IA vai combinar o histórico dos sensores com a **previsão meteorológica da API Open-Meteo** (temperatura, humidade, precipitação e radiação solar).*
+- *Utilizador: consulta os dados, os alertas e as sugestões de cuidados através do **dashboard web**, que comunica com a API REST.*
+
 ### 4.2. Esboço do Artefacto Físico
 
-Imagem criada no ChatGPT
-
 <img width="1536" height="1024" alt="Image" src="https://github.com/user-attachments/assets/adc48034-f0e9-436b-9a65-6f3a788146b2" />
+
+*Esboço conceptual (imagem gerada por IA). Notas sobre a implementação real:*
+
+- *Humidade do solo: será usado um sensor **capacitivo**, mais resistente à corrosão do que o modelo resistivo ilustrado.*
+- *pH do solo: componente **opcional**, a avaliar, pois exige um sensor próprio para solo (a sonda ilustrada destina-se a líquidos).*
+- *Painel solar: apenas para a versão **exterior**, como alimentação auxiliar.*
+- *Fase 2: a base do vaso funcionará como **reservatório de água**, com mini bomba controlada pelo relé e sensor de nível para alertar quando a água estiver a acabar.*
 
 ---
 
