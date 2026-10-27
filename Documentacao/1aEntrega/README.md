@@ -56,10 +56,12 @@ Amantes de plantas, com vidas activas e agitadas.
 * **Plataformas & Ferramentas:** GitHub, Wokwi, Diagrams.net, EasyEDA, VS Code.
 
 ### 3.2. Lista Preliminar de Material
+
 | Componente | Quantidade | Descrição / Função |
+|---|:---:|---|
 | ESP32 | 1 | Microcontrolador principal com Wi-Fi |
 | Painel Solar | 2 | Fonte de energia auxiliar |
-| Powerbank | 1 | Fonte de alimentação do Arduino |
+| Powerbank | 1 | Fonte de alimentação do ESP32 |
 | Sensor de Humidade | 1 | Controlo de humidade do ar |
 | Sensor de Humidade do Solo | 1 | Controlo de humidade do solo |
 | Sensor de Luz | 1 | Controlo de luminosidade |
