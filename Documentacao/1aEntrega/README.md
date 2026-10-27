@@ -113,6 +113,8 @@ Seguindo a sugestão do docente de Sistemas Distribuídos, o projeto será desen
 - *Fonte de dados externa: o modelo de IA vai combinar o histórico dos sensores com a **previsão meteorológica da API Open-Meteo** (temperatura, humidade, precipitação e radiação solar).*
 - *Utilizador: consulta os dados, os alertas e as sugestões de cuidados através do **dashboard web**, que comunica com a API REST.*
 
+---
+
 ### 4.2. Esboço do Artefacto Físico
 
 <img width="1536" height="1024" alt="Image" src="https://github.com/user-attachments/assets/adc48034-f0e9-436b-9a65-6f3a788146b2" />
