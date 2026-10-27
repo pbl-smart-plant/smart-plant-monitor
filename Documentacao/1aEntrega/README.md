@@ -87,17 +87,19 @@ Amantes de plantas, com vidas activas e agitadas.
 ## 4. Arquitetura e Design da Solução
 
 ### 4.1. Arquitetura Computacional (Provisória)
+
 <img width="1774" height="887" alt="Image" src="https://github.com/user-attachments/assets/52158ab7-a3db-4576-99f7-55872ca09548" />
 
 ### 4.2. Esboço do Artefacto Físico
-[Inserir imagem/esboço do invólucro ou estrutura física que conterá o ESP32 e os sensores.]
 
-### 4.3. Diagramas de Circuitos (Opcional nesta fase)
-[Inserir esquema elétrico do circuito no Wokwi ou EasyEDA, caso já esteja elaborado.]
+Imagem criada no ChatGPT
+
+<img width="1536" height="1024" alt="Image" src="https://github.com/user-attachments/assets/adc48034-f0e9-436b-9a65-6f3a788146b2" />
 
 ---
 
 ## 5. Planeamento e Calendarização
+
 ### 5.1. Distribuição de Tarefas
 
 > ⚠️ A distribuição de tarefas ainda está em definição e será atualizada nas próximas entregas.
