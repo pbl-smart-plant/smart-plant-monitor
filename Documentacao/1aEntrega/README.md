@@ -40,7 +40,21 @@ Pretendemos, com este projeto, ajudar todos os PlantLovers a estarem mais atento
 ### 2.3. Público-Alvo
 Amantes de plantas, com vidas activas e agitadas.
 
-### 2.4. Enquadramento nas Unidades Curriculares
+### 2.4. Fases do Projeto
+Seguindo a sugestão do docente de Sistemas Distribuídos, o projeto será desenvolvido em duas fases:
+
+**Fase 1 – Monitorização e alertas (até ao Milestone 2, 30-11-2026)**
+- Leitura da humidade do solo, humidade e temperatura do ar e luminosidade.
+- Envio periódico dos dados para o servidor via REST e armazenamento em MySQL.
+- Alertas ao utilizador quando a planta precisa de atenção (ex.: solo demasiado seco).
+- Recolha contínua de dados nas 4 casas, com pelo menos uma planta da mesma espécie em todas.
+
+**Fase 2 – Atuação automática (até à entrega final, 01-02-2027)**
+- Rega automática através de uma mini bomba de água controlada por relé.
+- Reservatório de água com sensor de nível e alerta quando a água estiver a acabar.
+- Sugestões de cuidados geradas pelo modelo de IA, com base nos dados recolhidos e na previsão meteorológica.
+
+### 2.5. Enquadramento nas Unidades Curriculares
 * **Sistemas Distribuídos:** Gestão de projeto, infraestrutura de comunicação e integração dos serviços.
 * **Computação Física e IoT:** Programação do ESP32, leitura de sensores e envio de dados via REST.
 * **Inteligência Artificial:** Tratamento de dados de sensores e fontes externas para treino de modelos de preditivos de cuidados.
