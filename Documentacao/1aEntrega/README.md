@@ -112,3 +112,5 @@ Imagem criada no ChatGPT
 | Engenharia de Software & Testes | A definir | A definir |
 
 Todos os elementos do grupo (Daniel, Rute, Rui e Dylane) montam uma réplica do sistema em casa e participam nas apresentações.
+
+<img width="1549" height="625" alt="Image" src="https://github.com/user-attachments/assets/6ce96885-4e43-4569-a145-9f2fff28b756" />
