@@ -107,7 +107,7 @@ Seguindo a sugestão do docente de Sistemas Distribuídos, o projeto será desen
 
 ### 4.1. Arquitetura Computacional (Provisória)
 
-<img width="1774" height="887" alt="Image" src="https://github.com/user-attachments/assets/52158ab7-a3db-4576-99f7-55872ca09548" />
+<img width="1672" height="819" alt="Image" src="https://github.com/user-attachments/assets/8f592890-2c01-4792-9873-781f6e237433" />
 
 *Diagrama de blocos conceptual (imagem gerada por IA). Notas sobre a arquitetura real:*
 
@@ -124,9 +124,9 @@ Seguindo a sugestão do docente de Sistemas Distribuídos, o projeto será desen
 *Esboço conceptual (imagem gerada por IA). Notas sobre a implementação real:*
 
 - *Humidade do solo: será usado um sensor **capacitivo**, mais resistente à corrosão do que o modelo resistivo ilustrado.*
-- *pH do solo: componente **opcional**, a avaliar, pois exige um sensor próprio para solo (a sonda ilustrada destina-se a líquidos).*
+- *pH do solo: a sonda ilustrada destina-se a líquidos.*
 - *Painel solar: apenas para a versão **exterior**, como alimentação auxiliar.*
-- *Fase 2: a base do vaso funcionará como **reservatório de água**, com mini bomba controlada pelo relé e sensor de nível para alertar quando a água estiver a acabar.*
+- **Fase 2**: a base do vaso funcionará como **reservatório de água**, com mini bomba controlada pelo relé e sensor de nível para alertar quando a água estiver a acabar.*
 
 ---
 
@@ -135,13 +135,6 @@ Seguindo a sugestão do docente de Sistemas Distribuídos, o projeto será desen
 ### 5.1. Distribuição de Tarefas
 
 > ⚠️ A distribuição de tarefas ainda está em definição e será atualizada nas próximas entregas.
-
-| Área | Responsável | Apoio |
-|---|:---:|:---:|
-| Sistemas Distribuídos & Infraestrutura | A definir | A definir |
-| Computação Física & Hardware IoT | A definir | A definir |
-| Desenvolvimento do Modelo de IA | A definir | A definir |
-| Engenharia de Software & Testes | A definir | A definir |
 
 Todos os elementos do grupo (Daniel, Rute, Rui e Dylane) montam uma réplica do sistema em casa e participam nas apresentações.
 
