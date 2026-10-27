@@ -33,9 +33,9 @@ Pretendemos, com este projeto, ajudar todos os PlantLovers a estarem mais atento
 ### 2.2. Motivação e Objetivos
 * **Motivação:** Tendo vários PlantLovers na constituição do grupo, foi fácil chegar à ideia deste projeto, pois tem sido um dos desafios ao longo do curso: manter todas as plantas de casa vivas.
 * **Objetivos:** 
-  * [Objetivo 1: Criar protótipo IoT baseado em ESP32 para recolha de dados.]
-  * [Objetivo 2: Implementar servidor web e base de dados relacional.]
-  * [Objetivo 3: Desenvolver modelo preditivo de IA para sugerir um melhor cuidado de determinada planta.]
+  * Objetivo 1: Criar protótipo IoT baseado em ESP32 para recolha de dados.
+  * Objetivo 2: Implementar servidor web e base de dados relacional.
+  * Objetivo 3: Desenvolver modelo preditivo de IA para sugerir um melhor cuidado de determinada planta.
 
 ### 2.3. Público-Alvo
 Amantes de plantas, com vidas activas e agitadas.
