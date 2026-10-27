@@ -1,4 +1,4 @@
-# Smart Plant Monitor
+# PlantCare
 
 > 🚧 README em construção — a descrição do projeto será adicionada em breve.
 
