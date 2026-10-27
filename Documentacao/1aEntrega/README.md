@@ -85,7 +85,7 @@ Amantes de plantas, com vidas activas e agitadas.
 ## 4. Arquitetura e Design da Solução
 
 ### 4.1. Arquitetura Computacional (Provisória)
-[Inserir ou anexar diagrama de blocos mostrando a comunicação: ESP32 -> API REST / Servidor Web -> Base de Dados MySQL -> Modelo IA / Dashboard]
+<img width="1774" height="887" alt="Image" src="https://github.com/user-attachments/assets/52158ab7-a3db-4576-99f7-55872ca09548" />
 
 ### 4.2. Esboço do Artefacto Físico
 [Inserir imagem/esboço do invólucro ou estrutura física que conterá o ESP32 e os sensores.]
