@@ -71,16 +71,19 @@ Seguindo a sugestão do docente de Sistemas Distribuídos, o projeto será desen
 
 ### 3.2. Lista Preliminar de Material
 
-| Componente | Quantidade | Descrição / Função |
-|---|:---:|---|
-| ESP32 | 1 | Microcontrolador principal com Wi-Fi |
-| Painel Solar | 2 | Fonte de energia auxiliar |
-| Powerbank | 1 | Fonte de alimentação do ESP32 |
-| Sensor de Humidade | 1 | Controlo de humidade do ar |
-| Sensor de Humidade do Solo | 1 | Controlo de humidade do solo |
-| Sensor de Luz | 1 | Controlo de luminosidade |
-| Sensor de pH | 1 | Controlo do pH do solo |
-| Sensor de Temperatura | 1 | Controlo de temperatura do ar |
+| Componente | Quantidade (por elemento) | Descrição / Função | Fase |
+|---|---|---|---|
+| ESP32 DevKit V1 | 1 | Microcontrolador principal com Wi-Fi | 1 |
+| Sensor capacitivo de humidade do solo | 1 | Medição da humidade do solo | 1 |
+| Sensor de temperatura e humidade do ar (BME280/DHT22) | 1 | Medição da temperatura e humidade do ar | 1 |
+| Sensor de luminosidade (BH1750) | 1 | Medição da luz | 1 |
+| Breadboard e cabos jumper | 1 conjunto | Montagem do circuito | 1 |
+| Powerbank / fonte 5V | 1 | Alimentação do sistema | 1 |
+| Mini bomba de água submersível 5V + tubo | 1 | Rega automática | 2 |
+| Módulo relé 5V | 1 | Ligar e desligar a bomba | 2 |
+| Sensor de nível de água (boia) | 1 | Alerta de reservatório vazio | 2 |
+| Painel solar pequeno | 1 | Alimentação auxiliar no exterior (opcional) | 2 |
+| Sensor de pH do solo | 1 | Medição do pH do solo (opcional, a avaliar) | 2 |
 
 ### 3.3. Guiões de Teste Preliminares
 * **Guião de Teste 1: Registo e Envio de Dados do Sensor**
