@@ -65,7 +65,7 @@ Seguindo a sugestão do docente de Sistemas Distribuídos, o projeto será desen
 ## 3. Requisitos e Especificações Técnicas
 
 ### 3.1. Requisitos Técnicos e Tecnologias (Provisórios)
-* **Hardware:** Microcontrolador ESP32, sensores de corrente/tensão, atuadores (relés), breadboard, cabos.
+* **Hardware:** Microcontrolador ESP32, sensor capacitivo de humidade do solo, sensor de temperatura e humidade do ar (BME280 ou DHT22), sensor de luminosidade (BH1750), breadboard e cabos. Na Fase 2: mini bomba de água 5V, módulo relé e sensor de nível de água.
 * **Software & Linguagens:** C/C++ (Arduino IDE / PlatformIO), Python (Treino de IA), SQL (MySQL), Node.js / Express (Servidor Web REST).
 * **Plataformas & Ferramentas:** GitHub, Wokwi, Diagrams.net, EasyEDA, VS Code.
 
