@@ -20,7 +20,7 @@
   * Rute Frutuoso (20241693)
 
 * **Link para o Repositório GitHub:** https://github.com/pbl-smart-plant/smart-plant-monitor
-* **Palavras-chave:** IoT, ESP32, Inteligência Artificial, Sistemas Distribuídos, Casas Inteligentes, Plantas.
+* **Palavras-chave:** IoT, ESP32, Monitorização de Plantas, Sensores, API REST, MySQL, Modelo Preditivo, Casas Inteligentes
 
 ---
 
