@@ -1,0 +1,7 @@
+# Bibliotecas da API (instalar com: pip install -r requirements.txt)
+fastapi==0.162.5         # a framework da API (rotas, validação, documentação em /docs)
+uvicorn==0.54.0          # o servidor que põe a API a ouvir na porta 8000
+PyMySQL[rsa]==1.2.4      # fala com o MySQL ([rsa] = suporte ao login seguro do MySQL 8)
+bcrypt==5.0.0            # hash do PIN
+httpx==0.28.1            # pedidos HTTP ao Open-Meteo
+python-dotenv==1.2.3     # lê o ficheiro .env quando a API corre no Mac
