@@ -1,5 +1,6 @@
 # Segredos (passwords de Wi-Fi, credenciais da base de dados)
 .env
+*.pem
 secrets.h
 config.local.*
 
@@ -23,3 +24,7 @@ node_modules/
 # Sistema operativo
 .DS_Store
 Thumbs.db
+
+# IntelliJ
+.idea/
+*.iml

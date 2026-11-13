@@ -1,0 +1,24 @@
+services:
+  mysql:
+    image: mysql:8.4
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: plantcare
+      # Lidas pelo mysql/init/02-utilizadores-bd.sh:
+      API_DB_PASSWORD: ${API_DB_PASSWORD}
+      GRAFANA_DB_PASSWORD: ${GRAFANA_DB_PASSWORD}
+    volumes:
+      - mysql_dados:/var/lib/mysql                         # os dados sobrevivem a reinícios
+      - ./mysql/init:/docker-entrypoint-initdb.d:ro        # esquema + utilizadores (1.ª vez)
+    ports:
+      - "127.0.0.1:3306:3306"   # SÓ a própria máquina chega aqui (IntelliJ no Mac / túnel SSH na AWS)
+    healthcheck: # "o MySQL já está pronto?" (a API vai esperar por isto)
+      test: [ "CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -uroot -p$$MYSQL_ROOT_PASSWORD --silent" ]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 30s
+
+volumes:
+  mysql_dados:
