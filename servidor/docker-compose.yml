@@ -1,4 +1,5 @@
 services:
+  # --------------- MySQL
   mysql:
     image: mysql:8.4
     restart: unless-stopped
@@ -20,5 +21,55 @@ services:
       retries: 20
       start_period: 30s
 
+  # ---------------- API
+  api:
+    build: ./api                # constrói a imagem a partir de api/Dockerfile
+    restart: unless-stopped
+    environment:
+      DB_HOST: mysql            # dentro do Docker, o MySQL encontra-se pelo nome do serviço
+      API_DB_PASSWORD: ${API_DB_PASSWORD}
+      GRAFANA_URL: ${GRAFANA_URL}
+    ports:
+      - "8000:8000"             # aberta à rede: os ESP32 têm de chegar aqui
+    depends_on:
+      mysql:
+        condition: service_healthy   # só arranca depois de o MySQL estar pronto
+    healthcheck: # pergunta à própria API: GET /api/saude (que também testa a BD)
+      test: [ "CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/saude', timeout=3)" ]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
+  # ---------------- Grafana
+  grafana:
+    image: grafana/grafana:13.3
+    restart: unless-stopped
+    environment:
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_ADMIN_PASSWORD}
+      GRAFANA_DB_PASSWORD: ${GRAFANA_DB_PASSWORD}   # lida pelo grafana/provisioning/datasources/
+      # Registo livre: cada utilizador cria a sua conta (RF03)
+      GF_USERS_ALLOW_SIGN_UP: "true"
+      # Email (confirmação de conta, "esqueci-me da password"): desligado até haver SMTP
+      GF_USERS_VERIFY_EMAIL_ENABLED: ${GRAFANA_EMAIL_ATIVO:-false}
+      GF_SMTP_ENABLED: ${GRAFANA_EMAIL_ATIVO:-false}
+      GF_SMTP_HOST: smtp.gmail.com:587
+      GF_SMTP_USER: ${SMTP_USER:-}
+      GF_SMTP_PASSWORD: ${SMTP_PASSWORD:-}
+      GF_SMTP_FROM_ADDRESS: ${SMTP_USER:-}
+      GF_SMTP_FROM_NAME: PlantCare
+    volumes:
+      - grafana_dados:/var/lib/grafana                     # contas, dashboards, definições
+      - ./grafana/provisioning:/etc/grafana/provisioning:ro
+    ports:
+      - "3000:3000"
+    depends_on:
+      mysql:
+        condition: service_healthy
+
 volumes:
   mysql_dados:
+    name: plantcare_mysql_dados       # nome fixo: o recriar-bd.sh apaga SÓ este volume
+  grafana_dados:
+    name: plantcare_grafana_dados
+
