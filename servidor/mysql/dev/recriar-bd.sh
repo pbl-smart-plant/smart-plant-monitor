@@ -14,8 +14,9 @@ if [[ "${AMBIENTE:-}" != "dev" ]]; then
   exit 1
 fi
 
-echo "🗑️  A apagar a BD local..."
-docker compose down -v                 # -v apaga o volume (os dados). OK porque é dev!
+echo "🗑️  A apagar a BD local (a API e o Grafana, com os dashboards, ficam)..."
+docker compose rm --stop --force mysql           # para e remove SÓ o contentor do MySQL
+docker volume rm --force plantcare_mysql_dados   # apaga SÓ o volume da BD. OK porque é dev!
 
 echo "🚀 A arrancar o MySQL e a criar as tabelas (01-esquema.sql + 02-utilizadores-bd.sh)..."
 docker compose up -d --wait mysql      # --wait espera pelo healthcheck

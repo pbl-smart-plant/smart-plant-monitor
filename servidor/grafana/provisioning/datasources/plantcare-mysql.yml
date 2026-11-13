@@ -1,0 +1,21 @@
+# Ligação do Grafana à BD, criada AUTOMATICAMENTE no arranque ("provisioning").
+# No protótipo fazia-se à mão (Connections → Data sources). Assim, é igual localmente e na AWS.
+apiVersion: 1
+
+datasources:
+  - name: PlantCare MySQL
+    uid: plantcare-mysql          # identificador fixo: os dashboards (Parte 5) referem-se a ele
+    type: mysql
+    url: mysql:3306               # o nome do serviço no docker-compose.yml, não um IP
+    user: grafana                 # o utilizador SÓ DE LEITURA da Parte 1
+    isDefault: true
+    editable: false               # não se muda pela interface: muda-se neste ficheiro
+    jsonData:
+      database: plantcare
+      maxOpenConns: 10
+      maxIdleConns: 10
+      connMaxLifetime: 14400
+    secureJsonData:
+      # Vem da variável de ambiente do contentor (docker-compose.yml → .env).
+      # A password nunca fica escrita no repositório.
+      password: ${GRAFANA_DB_PASSWORD}
