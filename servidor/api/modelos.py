@@ -16,7 +16,7 @@ class Leitura(BaseModel):
     humidade_solo: float = Field(ge=0, le=100) # %  (ge = maior ou igual, le = menor ou igual)
     temperatura: float = Field(ge=-20, le=60) # °C
     humidade_ar: float = Field(ge=0, le=100) # %
-    luz: int = Field(ge=0)
+    luz: int = Field(default=None,ge=0) # só quem tem o BH1750 envia
     nivel_agua: Optional[int] = Field(default=None, ge=0, le=4095) # só de hora a hora
 
 class PedidoPin(BaseModel):

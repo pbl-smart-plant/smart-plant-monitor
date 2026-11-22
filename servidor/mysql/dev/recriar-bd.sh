@@ -6,8 +6,7 @@
 set -euo pipefail                      # para logo ao primeiro erro
 
 cd "$(dirname "$0")/../.."             # vai para a pasta servidor/, esteja onde estiver
-source .env                            # lê AMBIENTE, MYSQL_ROOT_PASSWORD, ...
-
+eval "$(tr -d '\r' < .env)"       # lê o .env (o tr ignora fins de linha do Windows, se houver)
 # Proteção: na AWS o .env tem AMBIENTE=producao, e isto recusa-se a correr.
 if [[ "${AMBIENTE:-}" != "dev" ]]; then
   echo "❌ AMBIENTE=${AMBIENTE:-?}. Este script só corre com AMBIENTE=dev (apagava dados reais!)."

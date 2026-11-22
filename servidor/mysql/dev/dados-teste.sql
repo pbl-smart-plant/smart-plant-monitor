@@ -104,7 +104,7 @@ WHERE p.ativa = TRUE;
 -- ---------------------------------------------------------------------
 -- Comandos (botão de rega manual) — um de cada estado
 -- ---------------------------------------------------------------------
-INSERT INTO comandos (id, dispositivos_id, utilizador_id, estado, criado_em, executado_em) VALUES
+INSERT INTO comandos (id, dispositivo_id, utilizador_id, estado, criado_em, executado_em) VALUES
                   (1, 1, 2, 'executado', @agora - INTERVAL 1 DAY,    @agora - INTERVAL 1 DAY + INTERVAL 20 SECOND),
                   (2, 4, 5, 'falhou',    @agora - INTERVAL 23 HOUR,  @agora - INTERVAL 23 HOUR + INTERVAL 25 SECOND),
                   (3, 4, 5, 'expirado',  @agora - INTERVAL 3 HOUR,   NULL),
