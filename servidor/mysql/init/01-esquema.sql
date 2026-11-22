@@ -9,10 +9,10 @@ USE plantcare;
 -- 1. UTILIZADORES — quem usa o sistema
 CREATE TABLE utilizadores (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    email VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
     nome varchar(255) NOT NULL,
     papel ENUM('utilizador', 'admin') NOT NULL DEFAULT 'utilizador',
-    crido_em DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+    criado_em DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
 -- 2. DISPOSITIVOS — o vaso físico (ESP32 + sensores)
@@ -74,9 +74,9 @@ CREATE TABLE plantas (
     UNIQUE  KEY uq_uma_planta_ativa_por_vaso (dispositivo_ativo),
     FOREIGN KEY (especie_id) REFERENCES especies(id),
     FOREIGN KEY (dispositivo_id) REFERENCES dispositivos(id),
-CONSTRAINT chk_planta_solo CHECK ( (humidade_solo_min IS NOT NULL OR
+CONSTRAINT chk_planta_solo CHECK ( (humidade_solo_min IS NULL OR
                                     humidade_solo_min BETWEEN 0 AND 100) AND
-                                   (humidade_solo_max IS NOT NULL OR
+                                   (humidade_solo_max IS NULL OR
                                     humidade_solo_max BETWEEN 0 AND 100) AND
                                    (humidade_solo_min IS NULL OR
                                     humidade_solo_max IS NULL OR
@@ -119,15 +119,15 @@ CREATE TABLE alertas (
 -- 7. comandos (comandos dados no grafana para atuadores)
 CREATE TABLE comandos (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    dispositivos_id INT NOT NULL,
+    dispositivo_id INT NOT NULL,
     utilizador_id INT NULL,
     tipo ENUM('regar') NOT NULL DEFAULT 'regar',
     estado ENUM('pendente', 'executado', 'falhou', 'expirado') NOT NULL DEFAULT 'pendente',
     criado_em DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     executado_em DATETIME NULL,
-    FOREIGN KEY (dispositivos_id) REFERENCES dispositivos(id),
+    FOREIGN KEY (dispositivo_id) REFERENCES dispositivos(id),
     FOREIGN KEY (utilizador_id) REFERENCES  utilizadores(id),
-    INDEX idx_comandos_disp_estado (dispositivos_id, estado)
+    INDEX idx_comandos_disp_estado (dispositivo_id, estado)
 );
 
 -- 8. regas
