@@ -27,8 +27,8 @@
 // [ATENCAO] Se, com a bomba no COM + NO, ela ligar ao contrario, trocar:
 //   active-LOW:  RELAY_ON LOW,  RELAY_OFF HIGH
 //   active-HIGH: RELAY_ON HIGH, RELAY_OFF LOW
-#define RELAY_ON  LOW
-#define RELAY_OFF HIGH
+#define RELAY_ON  HIGH
+#define RELAY_OFF LOW
 
 // ---------- Sensores ----------
 #define DHT_TYPE DHT11           // DHT11 ou DHT22

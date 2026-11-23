@@ -37,7 +37,7 @@ int apiEnviarLeitura(const DadosSensores& d, bool incluirAgua) {
     n += snprintf(json + n, sizeof(json) - n, ",\"luz\":%ld", (long)d.luz);
   }
   if (incluirAgua) {
-    n += snprintf(json + n, sizeof(json) - n, ",\"nivel_agua\":%d", d.aguaRaw);
+    n += snprintf(json + n, sizeof(json) - n, ",\"nivel_agua\":%d", d.aguaPct);
   }
   snprintf(json + n, sizeof(json) - n, "}");
 
